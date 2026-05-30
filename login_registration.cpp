@@ -14,7 +14,7 @@ void registerUser() {
     std::ifstream infile("users.txt");
     while (infile >> u >> p) {
         if (u == username) {
-            std::cout << "❌ Error: Username already exists!\n";
+            std::cout << "Error: Username already exists!\n";
             infile.close();
             return;
         }
